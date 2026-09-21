@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alonsonavarretefl-sudo.github.io/viralshootia/sitemap.xml
