@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#090909" />
+  <title>ViralShotAI — 40+ Photo Prompts</title>
+  <meta name="description" content="Turn normal photos into viral shots with 40+ ready-to-use photo prompts. One-time $6.00 USD payment and instant digital access." />
+  <link rel="preconnect" href="https://cdn.tailwindcss.com" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23090909'/%3E%3Cpath d='M13 17h10l9 30 9-30h10L37 53H27z' fill='%23e4b91c'/%3E%3Cpath d='M46 10l2.2 5.8L54 18l-5.8 2.2L46 26l-2.2-5.8L38 18l5.8-2.2z' fill='white'/%3E%3C/svg%3E" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { ink: '#090909', gold: '#E4B91C', cream: '#F7F5F0', smoke: '#A7A7A7' },
+          fontFamily: { sans: ['Inter', 'Arial', 'sans-serif'], display: ['Georgia', 'Times New Roman', 'serif'] },
+          boxShadow: { glow: '0 18px 60px rgba(228,185,28,.16)' }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root { color-scheme: dark; }
+    body { background:#090909; }
+    .noise { background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.1'/%3E%3C/svg%3E"); }
+    .gold-grid { background-image:linear-gradient(rgba(228,185,28,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(228,185,28,.08) 1px,transparent 1px);background-size:34px 34px; }
+    .reveal { opacity:0; transform:translateY(18px); transition:opacity .6s ease,transform .6s ease; }
+    .reveal.visible { opacity:1; transform:none; }
+    .phone-shadow { box-shadow:0 35px 100px rgba(0,0,0,.7),0 0 0 1px rgba(255,255,255,.12); }
+    .cta-shine { position:relative; overflow:hidden; }
+    .cta-shine:after { content:""; position:absolute; inset:-80% auto -80% -35%; width:28%; transform:rotate(18deg); background:linear-gradient(90deg,transparent,rgba(255,255,255,.35),transparent); animation:shine 3.8s infinite; }
+    @keyframes shine { 0%,62%{left:-35%} 100%{left:125%} }
+    details[open] summary svg { transform:rotate(45deg); }
+    .safe-bottom { padding-bottom:max(.75rem,env(safe-area-inset-bottom)); }
+    @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.reveal{opacity:1;transform:none}.cta-shine:after{display:none}}
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Product","name":"ViralShotAI Prompt Pack","description":"57-page digital guide with 40+ ready-to-use photo prompts.","brand":{"@type":"Brand","name":"ViralShotAI"},"offers":{"@type":"Offer","price":"6.00","priceCurrency":"USD","availability":"https://schema.org/InStock","category":"Digital product","url":"https://pay.hotmart.com/M107652196N"}}
+  </script>
+</head>
+<body class="font-sans text-white antialiased selection:bg-gold selection:text-ink">
+  <div class="fixed inset-0 -z-20 gold-grid opacity-40"></div>
+  <div class="fixed inset-0 -z-10 noise opacity-25 pointer-events-none"></div>
+
+  <div id="demoBanner" class="bg-gold text-ink text-center text-xs font-extrabold tracking-wide py-2 px-4">
+    PRIVATE DEMO — ADD YOUR HOTMART CHECKOUT LINK TO ACCEPT PAYMENTS
+  </div>
+
+  <header class="sticky top-0 z-40 border-b border-white/10 bg-ink/85 backdrop-blur-xl">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6" aria-label="Main navigation">
+      <a href="#top" class="font-display text-2xl font-bold tracking-tight">ViralShot<span class="text-gold">AI</span></a>
+      <div class="flex items-center gap-3">
+        <span class="hidden text-sm text-white/60 sm:inline" data-i18n="navPrice">One-time $6.00</span>
+        <label class="sr-only" for="language">Language</label>
+        <select id="language" class="rounded-full border border-white/15 bg-white/5 px-3 py-2 text-sm font-semibold text-white outline-none focus:border-gold" aria-label="Choose language">
+          <option class="bg-ink" value="en">EN</option>
+          <option class="bg-ink" value="es">ES</option>
+        </select>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="relative overflow-hidden border-b border-white/10">
+      <div class="absolute left-1/2 top-16 h-96 w-96 -translate-x-1/2 rounded-full bg-gold/10 blur-[110px]"></div>
+      <div class="mx-auto grid min-h-[calc(100vh-112px)] max-w-6xl items-center gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[1.08fr_.92fr] lg:py-20">
+        <div class="relative z-10 max-w-2xl">
+          <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-gold/35 bg-gold/10 px-4 py-2 text-xs font-extrabold uppercase tracking-[.18em] text-gold">
+            <span class="h-2 w-2 rounded-full bg-gold"></span>
+            <span data-i18n="guideBadge">The ViralShotAI photo prompt guide</span>
+          </div>
+          <h1 class="font-display text-[clamp(3rem,9vw,6.4rem)] font-bold leading-[.9] tracking-[-.055em]" data-i18n="heroTitle">Turn Normal Photos Into Viral Shots</h1>
+          <p class="mt-6 max-w-xl text-lg leading-relaxed text-white/70 sm:text-xl" data-i18n="heroSub">40+ ready-to-use photo prompts for flash effects, HD enhancement, lighting upgrades and aesthetic edits.</p>
+
+          <div class="mt-7 flex flex-wrap items-end gap-4">
+            <div>
+              <p class="text-xs font-bold uppercase tracking-[.18em] text-white/45" data-i18n="oneTime">One-time payment</p>
+              <p class="mt-1 text-4xl font-black">$6.00 <span class="text-base font-semibold text-white/45">USD</span></p>
+            </div>
+            <span class="mb-2 rounded-full bg-white/10 px-3 py-1 text-sm font-bold text-white/75" data-i18n="noSub">No subscription</span>
+          </div>
+
+          <a data-buy href="https://pay.hotmart.com/M107652196N" class="cta-shine mt-7 flex min-h-14 w-full max-w-md items-center justify-center gap-3 rounded-xl bg-white px-6 py-4 text-lg font-black text-ink shadow-glow transition hover:-translate-y-0.5 hover:bg-gold focus:outline-none focus:ring-4 focus:ring-gold/30" data-i18n="heroCta">Get Instant Access — $6.00</a>
+          <div class="mt-4 flex max-w-md flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs font-semibold text-white/55 sm:justify-start">
+            <span class="flex items-center gap-1.5"><span class="text-gold">✓</span><span data-i18n="secure">SSL-secured checkout</span></span>
+            <span class="flex items-center gap-1.5"><span class="text-gold">✓</span><span data-i18n="emailDelivery">Access sent by email</span></span>
+            <span class="flex items-center gap-1.5"><span class="text-gold">✓</span><span data-i18n="guaranteeShort">7-day guarantee</span></span>
+          </div>
+        </div>
+
+        <div class="relative mx-auto w-full max-w-[360px] lg:ml-auto">
+          <div class="absolute -inset-5 rotate-3 rounded-[2.5rem] border border-gold/25 bg-gold/5"></div>
+          <div class="phone-shadow relative overflow-hidden rounded-[2rem] border-[6px] border-[#171717] bg-black">
+            <img src="assets/viralshot-ad.png" width="941" height="1672" alt="ViralShotAI guide cover showing a before and after flash transformation" class="h-auto w-full" fetchpriority="high" />
+          </div>
+          <div class="absolute -bottom-4 -left-5 rounded-xl border border-white/15 bg-[#151515]/95 px-4 py-3 shadow-2xl backdrop-blur">
+            <p class="text-xs font-bold uppercase tracking-widest text-white/45" data-i18n="inside">Inside the guide</p>
+            <p class="text-lg font-black">57 <span data-i18n="pages">pages</span> · 40+ prompts</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-b border-white/10 bg-white text-ink">
+      <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
+        <div class="reveal mx-auto max-w-3xl text-center">
+          <p class="text-xs font-black uppercase tracking-[.24em] text-[#937500]" data-i18n="proofEyebrow">Proof, not promises</p>
+          <h2 class="mt-3 font-display text-4xl font-bold tracking-tight sm:text-6xl" data-i18n="proofTitle">See what one prompt can change.</h2>
+          <p class="mx-auto mt-5 max-w-2xl text-lg text-black/60" data-i18n="proofSub">Real before-and-after spreads from the guide. Your original identity, pose and framing stay at the center.</p>
+        </div>
+        <div class="mt-12 grid gap-5 md:grid-cols-2">
+          <figure class="reveal overflow-hidden rounded-2xl border border-black/10 bg-[#f2f2f2] shadow-xl">
+            <img src="assets/flash-before-after.png" width="909" height="1286" loading="lazy" alt="Flash Effect before and after preview from the ViralShotAI guide" class="w-full" />
+            <figcaption class="flex items-center justify-between border-t border-black/10 px-5 py-4 text-sm font-bold"><span>01 — Flash Effect</span><span class="text-black/45" data-i18n="realSpread">Real guide spread</span></figcaption>
+          </figure>
+          <figure class="reveal overflow-hidden rounded-2xl border border-black/10 bg-[#f2f2f2] shadow-xl">
+            <img src="assets/super-hd-before-after.png" width="909" height="1286" loading="lazy" alt="Super HD before and after preview from the ViralShotAI guide" class="w-full" />
+            <figcaption class="flex items-center justify-between border-t border-black/10 px-5 py-4 text-sm font-bold"><span>03 — Super HD</span><span class="text-black/45" data-i18n="realSpread">Real guide spread</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-b border-white/10">
+      <div class="mx-auto grid max-w-6xl gap-14 px-4 py-16 sm:px-6 sm:py-24 lg:grid-cols-2 lg:items-center">
+        <div class="reveal">
+          <p class="text-xs font-black uppercase tracking-[.24em] text-gold" data-i18n="problemEyebrow">Stop guessing</p>
+          <h2 class="mt-3 font-display text-4xl font-bold leading-tight sm:text-5xl" data-i18n="problemTitle">The look is easy. Writing the right prompt is the hard part.</h2>
+          <p class="mt-5 text-lg leading-relaxed text-white/65" data-i18n="problemText">Generic prompts often change faces, flatten skin or overprocess the image. ViralShotAI gives you complete prompts designed to protect identity while improving the exact look you choose.</p>
+        </div>
+        <div class="reveal grid gap-3">
+          <div class="rounded-2xl border border-red-400/20 bg-red-400/5 p-5">
+            <p class="text-xs font-black uppercase tracking-widest text-red-300" data-i18n="without">Without the pack</p>
+            <p class="mt-2 text-lg text-white/70" data-i18n="withoutText">Trial-and-error prompts, inconsistent faces, overly artificial edits.</p>
+          </div>
+          <div class="rounded-2xl border border-gold/35 bg-gold/10 p-5">
+            <p class="text-xs font-black uppercase tracking-widest text-gold" data-i18n="with">With ViralShotAI</p>
+            <p class="mt-2 text-lg font-semibold" data-i18n="withText">Choose an effect, copy the full prompt, paste it under your photo, generate.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-b border-white/10 bg-[#101010]">
+      <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
+        <div class="reveal flex flex-col justify-between gap-6 md:flex-row md:items-end">
+          <div class="max-w-3xl">
+            <p class="text-xs font-black uppercase tracking-[.24em] text-gold" data-i18n="insideEyebrow">Inside your 57-page guide</p>
+            <h2 class="mt-3 font-display text-4xl font-bold sm:text-6xl" data-i18n="insideTitle">40+ effects. Four clear collections.</h2>
+          </div>
+          <p class="max-w-sm text-white/60" data-i18n="insideSub">Every effect includes the full English prompt, best-use guidance and a quick tip.</p>
+        </div>
+        <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          <article class="reveal min-h-52 rounded-2xl border border-white/10 bg-white/[.035] p-6"><span class="text-4xl font-black text-gold">01</span><h3 class="mt-8 text-xl font-black" data-i18n="cat1">Viral & Social Media</h3><p class="mt-2 text-sm leading-relaxed text-white/55">Flash Effect, Lo-Fi, Viral Night Shot, Mirror Selfie Upgrade.</p></article>
+          <article class="reveal min-h-52 rounded-2xl border border-white/10 bg-white/[.035] p-6"><span class="text-4xl font-black text-gold">02</span><h3 class="mt-8 text-xl font-black" data-i18n="cat2">Image Quality</h3><p class="mt-2 text-sm leading-relaxed text-white/55" data-i18n="cat2Text">Sharper detail, controlled contrast and realistic texture.</p></article>
+          <article class="reveal min-h-52 rounded-2xl border border-white/10 bg-white/[.035] p-6"><span class="text-4xl font-black text-gold">03</span><h3 class="mt-8 text-xl font-black" data-i18n="cat3">Lighting</h3><p class="mt-2 text-sm leading-relaxed text-white/55" data-i18n="cat3Text">Flash, cinematic, golden-hour and ambient light upgrades.</p></article>
+          <article class="reveal min-h-52 rounded-2xl border border-white/10 bg-white/[.035] p-6"><span class="text-4xl font-black text-gold">04</span><h3 class="mt-8 text-xl font-black" data-i18n="cat4">Color & Aesthetics</h3><p class="mt-2 text-sm leading-relaxed text-white/55" data-i18n="cat4Text">Scroll-stopping looks without complicated editing apps.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-b border-white/10 bg-gold text-ink">
+      <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
+        <div class="reveal text-center">
+          <p class="text-xs font-black uppercase tracking-[.24em]" data-i18n="howEyebrow">No editing skills required</p>
+          <h2 class="mt-3 font-display text-4xl font-bold sm:text-6xl" data-i18n="howTitle">Three steps. One better photo.</h2>
+        </div>
+        <div class="mt-10 grid gap-px overflow-hidden rounded-2xl border border-black/20 bg-black/20 md:grid-cols-3">
+          <div class="reveal bg-gold p-7"><span class="text-sm font-black">01</span><h3 class="mt-8 text-2xl font-black" data-i18n="step1">Upload your photo</h3><p class="mt-2 text-black/65" data-i18n="step1Text">Open your AI photo editor and upload the highest-quality original.</p></div>
+          <div class="reveal bg-gold p-7"><span class="text-sm font-black">02</span><h3 class="mt-8 text-2xl font-black" data-i18n="step2">Copy your effect</h3><p class="mt-2 text-black/65" data-i18n="step2Text">Choose from 40+ effects and copy the entire prompt.</p></div>
+          <div class="reveal bg-gold p-7"><span class="text-sm font-black">03</span><h3 class="mt-8 text-2xl font-black" data-i18n="step3">Paste and generate</h3><p class="mt-2 text-black/65" data-i18n="step3Text">Send the prompt under your image and save the result.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviewPreview" class="border-b border-white/10 bg-[#101010]">
+      <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
+        <div class="reveal flex flex-col justify-between gap-5 md:flex-row md:items-end">
+          <div><p class="text-xs font-black uppercase tracking-[.24em] text-gold">Social proof layout</p><h2 class="mt-3 font-display text-4xl font-bold sm:text-5xl">Add verified buyer words here.</h2></div>
+          <p class="max-w-md rounded-xl border border-gold/30 bg-gold/10 p-4 text-sm text-white/65">These three demo slots are intentionally not fake testimonials. Replace them with exact reviews after your first verified sales.</p>
+        </div>
+        <div class="mt-8 grid gap-4 md:grid-cols-3">
+          <article class="reveal rounded-2xl border border-dashed border-white/20 bg-white/[.03] p-6"><div class="text-gold">★★★★★</div><p class="mt-5 text-lg font-semibold text-white/45">“Verified customer review goes here.”</p><p class="mt-6 text-xs font-black uppercase tracking-widest text-white/30">Verified buyer</p></article>
+          <article class="reveal rounded-2xl border border-dashed border-white/20 bg-white/[.03] p-6"><div class="text-gold">★★★★★</div><p class="mt-5 text-lg font-semibold text-white/45">“Verified customer review goes here.”</p><p class="mt-6 text-xs font-black uppercase tracking-widest text-white/30">Verified buyer</p></article>
+          <article class="reveal rounded-2xl border border-dashed border-white/20 bg-white/[.03] p-6"><div class="text-gold">★★★★★</div><p class="mt-5 text-lg font-semibold text-white/45">“Verified customer review goes here.”</p><p class="mt-6 text-xs font-black uppercase tracking-widest text-white/30">Verified buyer</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="offer" class="border-b border-white/10">
+      <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
+        <div class="reveal mx-auto max-w-3xl overflow-hidden rounded-3xl border border-gold/30 bg-gradient-to-b from-[#181818] to-[#0d0d0d] shadow-glow">
+          <div class="border-b border-white/10 p-7 text-center sm:p-10">
+            <p class="text-xs font-black uppercase tracking-[.24em] text-gold" data-i18n="offerEyebrow">Instant digital access</p>
+            <h2 class="mt-3 font-display text-4xl font-bold sm:text-5xl" data-i18n="offerTitle">Get the complete ViralShotAI pack</h2>
+            <p class="mt-4 text-white/60" data-i18n="offerSub">57-page PDF · 40+ prompts · Quick-fix commands · Before/after examples</p>
+          </div>
+          <div class="p-7 sm:p-10">
+            <div class="flex items-end justify-center gap-2"><span class="text-6xl font-black">$6.00</span><span class="mb-2 text-sm font-bold text-white/45">USD</span></div>
+            <p class="mt-2 text-center text-sm font-bold text-white/55" data-i18n="oneTimeNoSub">One-time payment. No subscription.</p>
+            <a data-buy href="https://pay.hotmart.com/M107652196N" class="cta-shine mt-7 flex min-h-14 w-full items-center justify-center rounded-xl bg-gold px-6 py-4 text-lg font-black text-ink transition hover:-translate-y-0.5 hover:bg-[#f4cb2c] focus:outline-none focus:ring-4 focus:ring-gold/30" data-i18n="offerCta">Get Instant Access — $6.00</a>
+
+            <div class="mt-5 grid grid-cols-2 gap-2 text-center text-xs font-bold text-white/65 sm:grid-cols-4">
+              <div class="rounded-xl border border-white/10 bg-white/5 px-2 py-3"><span class="block text-gold">🔒</span><span data-i18n="badgeSsl">SSL secure</span></div>
+              <div class="rounded-xl border border-white/10 bg-white/5 px-2 py-3"><span class="block text-gold">H</span><span data-i18n="badgeHotmart">Hotmart checkout</span></div>
+              <div class="rounded-xl border border-white/10 bg-white/5 px-2 py-3"><span class="block text-gold">VISA</span><span data-i18n="badgeCards">Cards / PayPal*</span></div>
+              <div class="rounded-xl border border-white/10 bg-white/5 px-2 py-3"><span class="block text-gold">↩</span><span data-i18n="badgeRefund">7-day guarantee</span></div>
+            </div>
+            <p class="mt-3 text-center text-[12px] text-white/35" data-i18n="paymentNote">*Available payment methods depend on the buyer's country and checkout settings.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-b border-white/10 bg-white text-ink">
+      <div class="mx-auto max-w-4xl px-4 py-16 sm:px-6 sm:py-24">
+        <div class="reveal text-center">
+          <p class="text-xs font-black uppercase tracking-[.24em] text-[#937500]">FAQ</p>
+          <h2 class="mt-3 font-display text-4xl font-bold sm:text-5xl" data-i18n="faqTitle">Questions before you buy?</h2>
+        </div>
+        <div class="mt-10 divide-y divide-black/10 border-y border-black/10">
+          <details class="group reveal py-5"><summary class="flex cursor-pointer list-none items-center justify-between gap-5 text-lg font-black"><span data-i18n="faq1q">What exactly do I receive?</span><svg class="h-5 w-5 shrink-0 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 5v14M5 12h14" stroke-width="2" stroke-linecap="round"/></svg></summary><p class="mt-3 max-w-3xl leading-relaxed text-black/60" data-i18n="faq1a">A 57-page PDF with 40+ complete English prompts, instructions, before/after examples and quick-fix commands.</p></details>
+          <details class="group reveal py-5"><summary class="flex cursor-pointer list-none items-center justify-between gap-5 text-lg font-black"><span data-i18n="faq2q">Do I need editing experience?</span><svg class="h-5 w-5 shrink-0 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 5v14M5 12h14" stroke-width="2" stroke-linecap="round"/></svg></summary><p class="mt-3 max-w-3xl leading-relaxed text-black/60" data-i18n="faq2a">No. Upload a photo to an AI photo editor that accepts image uploads and text instructions, then copy and paste the prompt.</p></details>
+          <details class="group reveal py-5"><summary class="flex cursor-pointer list-none items-center justify-between gap-5 text-lg font-black"><span data-i18n="faq3q">How do I get access?</span><svg class="h-5 w-5 shrink-0 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 5v14M5 12h14" stroke-width="2" stroke-linecap="round"/></svg></summary><p class="mt-3 max-w-3xl leading-relaxed text-black/60" data-i18n="faq3a">After Hotmart confirms your payment, access details are released and sent to the email used at checkout.</p></details>
+          <details class="group reveal py-5"><summary class="flex cursor-pointer list-none items-center justify-between gap-5 text-lg font-black"><span data-i18n="faq4q">Will every photo look exactly the same?</span><svg class="h-5 w-5 shrink-0 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 5v14M5 12h14" stroke-width="2" stroke-linecap="round"/></svg></summary><p class="mt-3 max-w-3xl leading-relaxed text-black/60" data-i18n="faq4a">Results vary with the original photo, its lighting and the AI tool you use. The guide includes quick-fix commands to make results subtler or more natural.</p></details>
+          <details class="group reveal py-5"><summary class="flex cursor-pointer list-none items-center justify-between gap-5 text-lg font-black"><span data-i18n="faq5q">Is there a refund guarantee?</span><svg class="h-5 w-5 shrink-0 transition" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M12 5v14M5 12h14" stroke-width="2" stroke-linecap="round"/></svg></summary><p class="mt-3 max-w-3xl leading-relaxed text-black/60" data-i18n="faq5a">Yes. You can request a refund within 7 days of purchase, subject to the terms shown at checkout.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0 bg-gold/10 blur-3xl"></div>
+      <div class="reveal relative mx-auto max-w-4xl px-4 py-20 text-center sm:px-6 sm:py-28">
+        <h2 class="font-display text-5xl font-bold leading-[.95] sm:text-7xl" data-i18n="finalTitle">Your next viral shot could start with one prompt.</h2>
+        <p class="mx-auto mt-5 max-w-xl text-lg text-white/60" data-i18n="finalSub">Get 40+ ready-to-use photo prompts today.</p>
+        <a data-buy href="https://pay.hotmart.com/M107652196N" class="cta-shine mx-auto mt-8 flex min-h-14 w-full max-w-md items-center justify-center rounded-xl bg-white px-6 py-4 text-lg font-black text-ink transition hover:-translate-y-0.5 hover:bg-gold focus:outline-none focus:ring-4 focus:ring-gold/30" data-i18n="finalCta">Get Instant Access — $6.00</a>
+        <p class="mt-4 text-sm font-semibold text-white/45" data-i18n="finalTrust">Secure checkout · Instant email delivery · 7-day guarantee</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10 pb-24 md:pb-0">
+    <div class="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-8 text-sm text-white/40 sm:px-6 md:flex-row md:items-center md:justify-between">
+      <p>© 2026 ViralShotAI. <span data-i18n="rights">All rights reserved.</span></p>
+      <div class="flex flex-wrap gap-4"><a href="#" class="hover:text-white" data-i18n="terms">Terms</a><a href="#" class="hover:text-white" data-i18n="privacy">Privacy</a><a href="mailto:support@viralshotai.com" class="hover:text-white" data-i18n="support">Support</a></div>
+      <p class="max-w-lg text-xs" data-i18n="disclaimer">ViralShotAI is an independent photo prompt guide. Results vary by source image and AI tool.</p>
+    </div>
+  </footer>
+
+  <div class="safe-bottom fixed inset-x-0 bottom-0 z-50 border-t border-white/10 bg-ink/92 p-3 backdrop-blur-xl md:hidden">
+    <a data-buy href="https://pay.hotmart.com/M107652196N" class="flex min-h-12 w-full items-center justify-center rounded-xl bg-gold px-5 py-3 font-black text-ink" data-i18n="stickyCta">Get Instant Access — $6.00</a>
+  </div>
+
+  <div id="checkoutModal" class="fixed inset-0 z-[70] hidden items-end justify-center bg-black/75 p-0 backdrop-blur-sm sm:items-center sm:p-4" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+    <div class="w-full max-w-md rounded-t-3xl border border-white/10 bg-[#141414] p-6 shadow-2xl sm:rounded-3xl sm:p-8">
+      <div class="flex items-start justify-between gap-5">
+        <div><p class="text-xs font-black uppercase tracking-widest text-gold" data-i18n="demoLabel">Checkout demo</p><h2 id="checkoutTitle" class="mt-1 text-2xl font-black" data-i18n="checkoutTitle">Complete your order</h2></div>
+        <button id="closeModal" class="grid h-10 w-10 place-items-center rounded-full bg-white/5 text-xl hover:bg-white/10" aria-label="Close checkout">×</button>
+      </div>
+      <div class="mt-6 flex items-center justify-between rounded-xl border border-white/10 bg-white/5 p-4"><div><p class="font-black">ViralShotAI Prompt Pack</p><p class="text-sm text-white/45">57-page PDF · 40+ prompts</p></div><p class="text-xl font-black">$6.00</p></div>
+      <label for="demoEmail" class="mt-5 block text-sm font-bold" data-i18n="emailLabel">Email for instant delivery</label>
+      <input id="demoEmail" type="email" autocomplete="email" placeholder="you@example.com" class="mt-2 min-h-12 w-full rounded-xl border border-white/15 bg-white/5 px-4 text-base outline-none focus:border-gold" />
+      <button id="demoPay" class="mt-4 min-h-12 w-full rounded-xl bg-gold px-5 py-3 font-black text-ink" data-i18n="demoPay">Simulate secure payment — $6.00</button>
+      <p class="mt-3 text-center text-xs leading-relaxed text-white/40" data-i18n="demoNote">Demo only. No card is charged and no email is sent. Live sales will continue securely on Hotmart.</p>
+    </div>
+  </div>
+
+  <div id="thankYou" class="fixed inset-0 z-[80] hidden overflow-y-auto bg-ink">
+    <div class="mx-auto flex min-h-full max-w-2xl items-center px-4 py-16">
+      <div class="w-full text-center">
+        <div class="mx-auto grid h-20 w-20 place-items-center rounded-full bg-gold text-4xl text-ink">✓</div>
+        <p class="mt-8 text-xs font-black uppercase tracking-[.24em] text-gold" data-i18n="successEyebrow">Payment confirmed</p>
+        <h2 class="mt-3 font-display text-5xl font-bold sm:text-6xl" data-i18n="successTitle">Thank you. Your guide is ready.</h2>
+        <p class="mx-auto mt-5 max-w-lg text-lg text-white/60"><span data-i18n="successPrefix">A secure access email will be sent to</span> <strong id="buyerEmail" class="text-white">your inbox</strong>. <span data-i18n="successSuffix">You can also open your product library below.</span></p>
+        <a id="accessButton" href="#" class="mx-auto mt-8 flex min-h-14 w-full max-w-md items-center justify-center rounded-xl bg-white px-6 py-4 text-lg font-black text-ink" data-i18n="accessCta">Open my secure download</a>
+        <button id="backToSite" class="mt-5 text-sm font-bold text-white/45 hover:text-white" data-i18n="back">Back to the landing page</button>
+        <p class="mt-10 text-xs text-white/30" data-i18n="successDemo">Demo confirmation: connect the approved-payment webhook before using this screen for live delivery.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="pointer-events-none fixed left-1/2 top-20 z-[100] -translate-x-1/2 translate-y-[-10px] rounded-full bg-white px-5 py-3 text-sm font-bold text-ink opacity-0 shadow-2xl transition" role="status" aria-live="polite"></div>
+
+  <script>
+    /* PRODUCTION SETUP — replace these values before launching Meta Ads. */
+    const CONFIG = {
+      checkoutUrl: 'https://pay.hotmart.com/M107652196N',
+      accessUrl: '',   // Hotmart Club/product access URL, or a signed post-purchase URL
+      metaPixelId: '', // Add the ViralShotAI Meta Pixel ID before launching ads
+      demoMode: false,
+      price: '6.00',
+      currency: 'USD'
+    };
+
+    const initMetaPixel = (pixelId) => {
+      if (!pixelId || window.fbq) return;
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+      (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', pixelId);
+      fbq('track', 'PageView');
+      fbq('track', 'ViewContent', {content_name:'ViralShotAI Prompt Pack', value:Number(CONFIG.price), currency:CONFIG.currency});
+    };
+    initMetaPixel(CONFIG.metaPixelId);
+    if (!CONFIG.demoMode) {
+      document.getElementById('demoBanner')?.remove();
+      document.getElementById('reviewPreview')?.remove();
+    }
+
+    const copy = {
+      en: {
+        navPrice:'One-time $6.00',guideBadge:'The ViralShotAI photo prompt guide',heroTitle:'Turn Normal Photos Into Viral Shots',heroSub:'40+ ready-to-use photo prompts for flash effects, HD enhancement, lighting upgrades and aesthetic edits.',oneTime:'One-time payment',noSub:'No subscription',heroCta:'Get Instant Access — $6.00',secure:'SSL-secured checkout',emailDelivery:'Access sent by email',guaranteeShort:'7-day guarantee',inside:'Inside the guide',pages:'pages',proofEyebrow:'Proof, not promises',proofTitle:'See what one prompt can change.',proofSub:'Real before-and-after spreads from the guide. Your original identity, pose and framing stay at the center.',realSpread:'Real guide spread',problemEyebrow:'Stop guessing',problemTitle:'The look is easy. Writing the right prompt is the hard part.',problemText:'Generic prompts often change faces, flatten skin or overprocess the image. ViralShotAI gives you complete prompts designed to protect identity while improving the exact look you choose.',without:'Without the pack',withoutText:'Trial-and-error prompts, inconsistent faces, overly artificial edits.',with:'With ViralShotAI',withText:'Choose an effect, copy the full prompt, paste it under your photo, generate.',insideEyebrow:'Inside your 57-page guide',insideTitle:'40+ effects. Four clear collections.',insideSub:'Every effect includes the full English prompt, best-use guidance and a quick tip.',cat1:'Viral & Social Media',cat2:'Image Quality',cat2Text:'Sharper detail, controlled contrast and realistic texture.',cat3:'Lighting',cat3Text:'Flash, cinematic, golden-hour and ambient light upgrades.',cat4:'Color & Aesthetics',cat4Text:'Scroll-stopping looks without complicated editing apps.',howEyebrow:'No editing skills required',howTitle:'Three steps. One better photo.',step1:'Upload your photo',step1Text:'Open your AI photo editor and upload the highest-quality original.',step2:'Copy your effect',step2Text:'Choose from 40+ effects and copy the entire prompt.',step3:'Paste and generate',step3Text:'Send the prompt under your image and save the result.',offerEyebrow:'Instant digital access',offerTitle:'Get the complete ViralShotAI pack',offerSub:'57-page PDF · 40+ prompts · Quick-fix commands · Before/after examples',oneTimeNoSub:'One-time payment. No subscription.',offerCta:'Get Instant Access — $6.00',badgeSsl:'SSL secure',badgeHotmart:'Hotmart checkout',badgeCards:'Cards / PayPal*',badgeRefund:'7-day guarantee',paymentNote:"*Available payment methods depend on the buyer's country and checkout settings.",faqTitle:'Questions before you buy?',faq1q:'What exactly do I receive?',faq1a:'A 57-page PDF with 40+ complete English prompts, instructions, before/after examples and quick-fix commands.',faq2q:'Do I need editing experience?',faq2a:'No. Upload a photo to an AI photo editor that accepts image uploads and text instructions, then copy and paste the prompt.',faq3q:'How do I get access?',faq3a:'After Hotmart confirms your payment, access details are released and sent to the email used at checkout.',faq4q:'Will every photo look exactly the same?',faq4a:'Results vary with the original photo, its lighting and the AI tool you use. The guide includes quick-fix commands to make results subtler or more natural.',faq5q:'Is there a refund guarantee?',faq5a:'Yes. You can request a refund within 7 days of purchase, subject to the terms shown at checkout.',finalTitle:'Your next viral shot could start with one prompt.',finalSub:'Get 40+ ready-to-use photo prompts today.',finalCta:'Get Instant Access — $6.00',finalTrust:'Secure checkout · Instant email delivery · 7-day guarantee',rights:'All rights reserved.',terms:'Terms',privacy:'Privacy',support:'Support',disclaimer:'ViralShotAI is an independent photo prompt guide. Results vary by source image and AI tool.',stickyCta:'Get Instant Access — $6.00',demoLabel:'Checkout demo',checkoutTitle:'Complete your order',emailLabel:'Email for instant delivery',demoPay:'Simulate secure payment — $6.00',demoNote:'Demo only. No card is charged and no email is sent. Live sales will continue securely on Hotmart.',successEyebrow:'Payment confirmed',successTitle:'Thank you. Your guide is ready.',successPrefix:'A secure access email will be sent to',successSuffix:'You can also open your product library below.',accessCta:'Open my secure download',back:'Back to the landing page',successDemo:'Demo confirmation: connect the approved-payment webhook before using this screen for live delivery.'
+      },
+      es: {
+        navPrice:'Pago único de $6.00',guideBadge:'Guía de prompts de ViralShotAI',heroTitle:'Convierte fotos normales en fotos virales',heroSub:'Más de 40 prompts fotográficos listos para usar: efecto flash, mejora HD, iluminación y estilos estéticos.',oneTime:'Pago único',noSub:'Sin suscripción',heroCta:'Obtén acceso inmediato — $6.00',secure:'Checkout protegido con SSL',emailDelivery:'Acceso enviado por correo',guaranteeShort:'Garantía de 7 días',inside:'Dentro de la guía',pages:'páginas',proofEyebrow:'Resultados reales',proofTitle:'Mira lo que un solo prompt puede cambiar.',proofSub:'Comparaciones reales incluidas en la guía. Tu identidad, pose y encuadre siguen siendo el centro.',realSpread:'Página real de la guía',problemEyebrow:'Deja de adivinar',problemTitle:'El estilo es fácil. Escribir el prompt correcto es lo difícil.',problemText:'Los prompts genéricos suelen cambiar rostros, aplanar la piel o procesar demasiado la imagen. ViralShotAI te da prompts completos pensados para conservar la identidad y mejorar el estilo que eliges.',without:'Sin el pack',withoutText:'Prueba y error, rostros inconsistentes y ediciones demasiado artificiales.',with:'Con ViralShotAI',withText:'Elige un efecto, copia el prompt completo, pégalo debajo de tu foto y genera.',insideEyebrow:'Dentro de tu guía de 57 páginas',insideTitle:'Más de 40 efectos. Cuatro colecciones claras.',insideSub:'Cada efecto incluye el prompt completo en inglés, cuándo usarlo y un consejo rápido.',cat1:'Viral y redes sociales',cat2:'Calidad de imagen',cat2Text:'Más detalle, contraste controlado y textura realista.',cat3:'Iluminación',cat3Text:'Flash, cine, hora dorada y mejoras de luz ambiental.',cat4:'Color y estética',cat4Text:'Estilos llamativos sin aplicaciones complicadas de edición.',howEyebrow:'No necesitas experiencia',howTitle:'Tres pasos. Una foto mejor.',step1:'Sube tu foto',step1Text:'Abre tu editor de fotos con IA y sube el archivo original de mayor calidad.',step2:'Copia tu efecto',step2Text:'Elige entre más de 40 efectos y copia el prompt completo.',step3:'Pega y genera',step3Text:'Envía el prompt debajo de la imagen y guarda el resultado.',offerEyebrow:'Acceso digital inmediato',offerTitle:'Obtén el pack completo de ViralShotAI',offerSub:'PDF de 57 páginas · 40+ prompts · Comandos de ajuste · Ejemplos antes/después',oneTimeNoSub:'Pago único. Sin suscripción.',offerCta:'Obtén acceso inmediato — $6.00',badgeSsl:'SSL seguro',badgeHotmart:'Checkout Hotmart',badgeCards:'Tarjetas / PayPal*',badgeRefund:'Garantía de 7 días',paymentNote:'*Los métodos disponibles dependen del país del comprador y la configuración del checkout.',faqTitle:'¿Preguntas antes de comprar?',faq1q:'¿Qué recibo exactamente?',faq1a:'Un PDF de 57 páginas con más de 40 prompts completos en inglés, instrucciones, ejemplos y comandos de ajuste.',faq2q:'¿Necesito experiencia editando?',faq2a:'No. Sube tu foto a un editor con IA que acepte imágenes e instrucciones de texto, luego copia y pega el prompt.',faq3q:'¿Cómo recibo el acceso?',faq3a:'Cuando Hotmart confirma el pago, libera el acceso y lo envía al correo usado en el checkout.',faq4q:'¿Todas las fotos quedarán iguales?',faq4a:'Los resultados varían según la foto original, su iluminación y la herramienta de IA que utilices. La guía incluye comandos para ajustar el efecto.',faq5q:'¿Hay garantía de reembolso?',faq5a:'Sí. Puedes solicitar un reembolso dentro de 7 días, sujeto a los términos mostrados en el checkout.',finalTitle:'Tu próxima foto viral puede comenzar con un prompt.',finalSub:'Obtén hoy más de 40 prompts fotográficos listos para usar.',finalCta:'Obtén acceso inmediato — $6.00',finalTrust:'Pago seguro · Entrega por correo · Garantía de 7 días',rights:'Todos los derechos reservados.',terms:'Términos',privacy:'Privacidad',support:'Soporte',disclaimer:'ViralShotAI es una guía independiente de prompts fotográficos. Los resultados varían según la imagen y la herramienta de IA.',stickyCta:'Obtén acceso inmediato — $6.00',demoLabel:'Demostración de checkout',checkoutTitle:'Completa tu pedido',emailLabel:'Correo para entrega inmediata',demoPay:'Simular pago seguro — $6.00',demoNote:'Solo demostración. No se cobra ninguna tarjeta ni se envía ningún correo. Las ventas reales continuarán de forma segura en Hotmart.',successEyebrow:'Pago confirmado',successTitle:'Gracias. Tu guía está lista.',successPrefix:'Se enviará un acceso seguro a',successSuffix:'También puedes abrir tu biblioteca de productos aquí.',accessCta:'Abrir mi descarga segura',back:'Volver a la página de venta',successDemo:'Confirmación simulada: conecta el webhook de pago aprobado antes de usar esta pantalla para entregas reales.'
+      }
+    };
+
+    const language = document.getElementById('language');
+    const setLanguage = (lang) => {
+      const active = copy[lang] || copy.en;
+      document.documentElement.lang = lang;
+      document.querySelectorAll('[data-i18n]').forEach(el => { if (active[el.dataset.i18n]) el.textContent = active[el.dataset.i18n]; });
+      localStorage.setItem('viralshot-language', lang);
+      language.value = lang;
+    };
+    const savedLanguage = localStorage.getItem('viralshot-language');
+    const preferred = savedLanguage || 'en';
+    setLanguage(preferred);
+    language.addEventListener('change', e => setLanguage(e.target.value));
+
+    const modal = document.getElementById('checkoutModal');
+    const thanks = document.getElementById('thankYou');
+    const toast = document.getElementById('toast');
+    const track = (event, data={}) => {
+      if (typeof window.fbq === 'function') window.fbq('track', event, data);
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({event, ...data});
+    };
+    const showToast = message => { toast.textContent=message; toast.classList.remove('opacity-0','translate-y-[-10px]'); setTimeout(()=>toast.classList.add('opacity-0','translate-y-[-10px]'),3200); };
+
+    document.querySelectorAll('[data-buy]').forEach(link => link.addEventListener('click', e => {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+      e.preventDefault();
+      track('InitiateCheckout', {value:Number(CONFIG.price), currency:CONFIG.currency});
+      if (!CONFIG.demoMode && CONFIG.checkoutUrl) {
+        const url = new URL(CONFIG.checkoutUrl);
+        const current = new URLSearchParams(location.search);
+        ['utm_source','utm_medium','utm_campaign','utm_content','utm_term'].forEach(key => { if(current.get(key)) url.searchParams.set(key,current.get(key)); });
+        location.href = url.toString();
+      } else {
+        modal.classList.remove('hidden'); modal.classList.add('flex');
+        setTimeout(()=>document.getElementById('demoEmail').focus(),50);
+      }
+    }));
+
+    const closeModal = () => { modal.classList.add('hidden'); modal.classList.remove('flex'); };
+    document.getElementById('closeModal').addEventListener('click', closeModal);
+    modal.addEventListener('click', e => { if(e.target === modal) closeModal(); });
+    document.addEventListener('keydown', e => { if(e.key==='Escape') closeModal(); });
+
+    document.getElementById('demoPay').addEventListener('click', () => {
+      const email = document.getElementById('demoEmail');
+      if (!email.checkValidity()) { email.reportValidity(); return; }
+      document.getElementById('buyerEmail').textContent = email.value;
+      document.getElementById('accessButton').href = CONFIG.accessUrl || '#';
+      closeModal(); thanks.classList.remove('hidden'); document.body.style.overflow='hidden';
+      track('Purchase', {value:Number(CONFIG.price), currency:CONFIG.currency, demo:true});
+    });
+
+    document.getElementById('accessButton').addEventListener('click', e => {
+      if (!CONFIG.accessUrl) { e.preventDefault(); showToast(language.value==='es' ? 'Agrega tu URL de acceso de Hotmart para activar esta descarga.' : 'Add your Hotmart access URL to activate this download.'); }
+    });
+    document.getElementById('backToSite').addEventListener('click', () => { thanks.classList.add('hidden'); document.body.style.overflow=''; });
+
+    const observer = new IntersectionObserver(entries => entries.forEach(entry => { if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target)}}),{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
